@@ -1,0 +1,200 @@
+/* Fontes importadas do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Rokkitt:wght@100&display=swap');
+
+/* Ícones importados do Fonts Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.menu-principal{
+
+    position: absolute;
+    font-family: "Cinzel", serif;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    background-color: black;
+}
+
+.menu-principal h2{
+
+    position: absolute;
+    font-family: "Cinzel", serif;
+    color: rgb(165, 4, 36);
+    margin-top: 1rem;
+    left: 2%;
+    opacity: 100%;
+    animation: moveH2 2s;
+}
+
+@keyframes moveH2{0%{ transform: translateX(20rem);opacity: 0%;}}
+
+.redes-sociais{
+
+    position: absolute;
+    left: 80%;
+    top: 4%;
+}
+
+.redes-sociais i{
+    color: rgb(165, 4, 36);
+    padding: 0 1.2rem;
+    font-size: 1.5rem;
+    opacity: 100%;
+    animation: moveIcon 2s;
+}
+
+@keyframes moveIcon{0%{transform: translateX(-20rem);opacity: 0;}}
+
+.hamburguer {
+
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 150;
+    left: 1rem;
+    top: 4.3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.hamburguer.show_menu {
+
+    left: 27rem;
+    transition: 2s;
+}
+
+.line{
+
+    width: 100%;
+    height: 5%;
+    background-color: #ffffff;
+    box-shadow: 0.1rem 0.1rem 1px #000000;
+}
+
+.hamburguer.show_menu #line1{
+
+    transform: rotate(45deg) translateY(0.65rem);
+    background-color: #000000;
+    transition: 2s;
+}
+
+.hamburguer.show_menu #line2{
+    opacity: 0;
+    transition: 1s;
+}
+
+.hamburguer.show_menu #line3{
+
+    transform: rotate(-45deg) translateY(-0.65rem);
+    background-color: #000000;
+    transition: 2s;
+}
+
+.sidebar{
+
+    position: absolute;
+    left: -30rem;
+    width: 30rem;
+    height: 60px;
+    top: 60px;
+    background-color: rgb(165, 4, 36);
+    z-index: 140;
+}   
+
+.sidebar.show_menu{
+
+    left: 0rem;
+    transition: 2s;
+}
+
+.menu{
+
+    position: relative;
+    font-family: "Cinzel", serif;
+    top: 3px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 1rem;
+    
+}
+
+.menu.show_menu{
+
+    position: fixed;
+    right: 3rem;
+}
+
+.menu-item{
+
+    padding: 1rem;
+}
+
+.menu-link{
+    color: #000000;
+}
+
+.sessao_imagens{
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-wrapper{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+.img-wrapper img{
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 120px;
+    opacity: 0.5;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 1s;
+}
+
+.img-wrapper #img1 {
+    animation: moveImg_1 2s;
+}
+
+.img-wrapper #img2 {
+    animation: moveImg_2 3s;
+}
+
+.img-wrapper #img3 {
+    animation: moveImg_3 4s;
+}
+
+.img-wrapper #img4 {
+    animation: moveImg_4 5s;
+}
+
+@keyframes moveImg_1{0%{transform: translateX(30rem) rotate(180deg)}}
+@keyframes moveImg_2{0%{transform: translatey(40rem) rotate(90deg)}}
+@keyframes moveImg_3{0%{transform: translateX(10rem)}}
+@keyframes moveImg_4{0%{transform: rotate(180deg)}}
+
