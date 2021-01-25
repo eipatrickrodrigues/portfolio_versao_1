@@ -43,50 +43,57 @@
         
 
         <header class="header" id="home">
-            <h1>Patrick Rodrigues</h1>
-            <h3>Desenvolverdor Web & Front-End</h3>
+            
+            <div class="info">
+                <h1>Patrick Rodrigues</h1>
+                <h3>Desenvolverdor Web & Front-End</h3>
+            </div>
+
+            <section class="img-wrapper">
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagens/pexels-christina-morillo-1181316.jpg" class="d-block w-100" alt="Mulher em um servidor">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/pexels-olia-danilevich-4974914.jpg" class="d-block w-100" alt="Homem trabalhando e estudando programação">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/pexels-tima-miroshnichenko-5717196.jpg" class="d-block w-100" alt="Mulher trabalhando">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/pexels-tima-miroshnichenko-5717577.jpg" class="d-block w-100" alt="Mulher trabalhando no seu carro de luxo">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+
+            </section>
         </header>
 
-        <section class="image">
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="imagens/pexels-christina-morillo-1181316.jpg" class="d-block w-100" alt="Mulher em um servidor">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/pexels-olia-danilevich-4974914.jpg" class="d-block w-100" alt="Homem trabalhando e estudando programação">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/pexels-tima-miroshnichenko-5717196.jpg" class="d-block w-100" alt="Mulher trabalhando">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagens/pexels-tima-miroshnichenko-5717577.jpg" class="d-block w-100" alt="Mulher trabalhando no seu carro de luxo">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </a>
-              </div>
-
-        </section>
-
         <section class="about" id="sobre">
-            <div id="tittle-id">
-                <h3>Quem sou eu?</h3></div>
+            <div id="title-id">
+                <h3>Quem sou eu?</h3>
+            </div>
             <div class="aboutme">
                 <p>Patrick Rodrigues, 24 anos e aprendiz de desenvolvimento web e front-end, amador de programação e com vontade de evoluir um pouco todo dia na criação de sites e aplicativos, também empolgado com o aprendizado em back-end e tudo que a tecnologia pode oferecer.</p>
+            </div>
+            <div class="img-perfil-wrapper">
+                <img src="imagens/IMG_20190907_223527.jpg" alt="Patrick Rodrigues">
             </div>
         </section>
 
@@ -162,12 +169,11 @@
             </div>
 
             <div class="project2-virtualassistant">
-
-                <div class="title">
+                <div class="myproject">
                     <h4>Assistente Virtual</h4>
+                    <img src="imagens/virtualassistant.png" alt="Virtual Assistant">
+                    <p>Uma programação mais avançada, resolvi iniciar um aprendizado em uma assistente virtual apenas por curiosidade e um upgrade no ego, admito. Contudo, acompanho vídeo aulas que aos poucos compreendo e vou retendo as informações.</p>
                 </div>
-                <img src="imagens/virtualassistant.png" alt="Virtual Assistant">
-                <p>Uma programação mais avançada, resolvi iniciar um aprendizado em uma assistente virtual apenas por curiosidade e um upgrade no ego, admito. Contudo, acompanho vídeo aulas que aos poucos compreendo e vou retendo as informações.</p>
             </div>
                 
         </section>
@@ -178,12 +184,10 @@
                 <h3>Fale comigo</h3>
             </div>
             <div class="whatsapp">
-                <i class="fab fa-whatsapp"></i>
-                <a href="https://web.whatsapp.com/send?phone=5531984161724">(31) 98416-1724</a>
+                <a href="https://web.whatsapp.com/send?phone=5531984161724"><i class="fab fa-whatsapp"></i></a>
             </div>
             <div class="email">
-                <i class="fas fa-at"></i>
-                <a href="mailto:paulo.patrick17@hotmail.com">Mande-me um e-mail.</a>
+                <a href="mailto:paulo.patrick17@hotmail.com"><i class="fas fa-at"></i></a>
             </div>
             
         </section>

@@ -9,3 +9,9 @@ Primeiro projeto de desenvolvimento web realizado por conta própria.
 ## Recriando
 
 Os códigos foram reiniciados para uma semântica adequada ser atendida, o aprendizado sobre tal tema está gerando resultado. Estou escrevendo os códigos com uma fluidez melhor.
+
+## Responsividade
+
+Desenvolvimento web responsivo é um pouco mais demorado de fazer, contudo acho que ficou um resultado interessante.
+
+Aceito sujestões para melhorar.

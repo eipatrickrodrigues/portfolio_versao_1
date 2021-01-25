@@ -122,3 +122,483 @@ font-family: 'Martel', serif; */
 .redes-sociais i {
     color: #000000;
 }
+
+header{
+
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+header .info{
+
+    object-fit: cover;
+    position: absolute;
+    text-align: center;
+    z-index: 140;
+    top: 30%;
+    left: 10%;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0.1rem 0.1rem 1px #000000 ;
+    animation: moveName 2s;
+}
+
+header .info h3{
+
+    font-size: medium;
+}
+
+.about{
+
+    background-color: black;
+    width: 80%;
+    height: 100vh;
+    max-width: 1100px;
+    color: gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.about .img-perfil-wrapper{
+
+    position: relative;
+    height: 100vh;
+    transform: scale(0.7);
+    top: -9rem;
+}
+
+.about .img-perfil-wrapper img{
+
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    opacity: 0.7;
+    transform: scale(0.7);
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 1rem;
+}
+
+@keyframes moveName {
+
+    0%{transform: translateY(10rem);
+        opacity: 0.5;
+    }100%{
+        opacity: 1;
+
+    }
+}
+
+.img-wrapper{
+
+    position: relative;
+    top: 0 auto;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 50%;
+}
+
+.about{
+
+    height: 100vh;
+    width: 100%;
+    max-width: 1100px;
+    padding-top: 3rem;
+
+}
+
+.about #title-id {
+
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.habilities #title-habilities{
+
+    width: 100%;
+    max-width: 1100px;
+    height: 4rem;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    color: grey;
+}
+
+.myhabilities .logo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.5rem;
+    width: 50%;
+    
+}
+
+.portfolio {
+
+    background-color: grey;
+    width: 100%;
+    max-width: 1100px;
+
+}
+
+.portfolio .title{
+
+    padding: 1rem;;
+    text-align: center;
+    color: grey;
+    background-color: #000000;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.portfolio h4{
+
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.portfolio .myproject{
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.portfolio .myproject img{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.portfolio .myproject p{
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact{
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1100px;
+    height: 10%;
+    
+}
+
+.contact .title{
+
+    padding-top: 0.5rem;
+}
+
+.contact .whatsapp{
+
+    font-size: 2rem;
+    
+}
+
+.contact .email{
+
+    font-size: 2rem;
+}
+
+footer{
+
+    background-color: black;
+    width: 100%;
+    max-width: 1100px;
+    height: 10%;
+}
+
+footer p {
+    color: gray;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer .redes-sociais i{
+
+    color: grey;
+}
+
+#link-topo i{
+
+    position: fixed;
+    font-size: 2rem;
+    bottom: 1rem;
+    left: 85%;
+    color: gray;
+    text-shadow: 0.1rem 0.1rem 1px #000000;
+    
+}
+
+/* Responsividade para tablets */
+@media (min-width: 700px){
+
+    .sidebar{
+        width: 35%;
+    }
+    .sidebar .menu-link {
+        font-size: 2rem;
+    }
+    .redes-sociais {
+        font-size: 3rem;
+        padding-top: 10rem;
+    }
+    .hamburguer.show_menu{
+        right: 30rem;
+    }
+    header .info{
+        right: 5rem;
+    }
+    header .info h1{
+        font-size: 3rem;
+    }
+    header .info h3{
+        font-size: 1.4rem;
+    }
+    .about{
+        width: 100%;
+        height: 100vh;
+    }
+    .about h3{
+        font-size: 3rem;
+    }
+    .about p{
+        font-size: 1.6rem;
+    }
+    .about .img-wrapper{
+        height: 100vh;
+        object-fit: cover;
+    }
+    .about .img-perfil-wrapper img{
+        transform: scale(0.5);
+        padding-bottom: 10rem;
+        height: 100%;
+    }
+    .habilities #title-habilities{
+        padding-bottom: 5rem;
+        background-color: gray;
+        color: #000000;
+    }
+    .habilities #title-habilities h3{
+        font-size: 2.5rem;
+    }
+    .myhabilities .logo{
+        font-size: 4rem;
+    }
+    .myhabilities h3{
+        font-size: 2.5rem;
+    }
+    .myhabilities p{
+        font-size: 1.6rem;
+    }
+    .portfolio .title{
+        padding: 2rem;
+    }
+    .portfolio .title h3{
+        font-size: 2rem;
+    }
+    .portfolio h4{
+        font-size: 2rem;
+    }
+    .portfolio .myproject p{
+        font-size: 1.6rem;
+    }
+    .contact{
+        padding: 1.4rem;
+    }
+    .contact .title h3{
+        font-size: 2rem;
+    }
+    .contact .whatsapp{
+        font-size: 3rem;
+    }
+    .contact .email{
+        font-size: 3rem;
+    }
+    footer{
+        height: 12rem;
+        bottom: 0;
+    }
+    footer p{
+        font-size: 1.6rem;
+    }
+    footer .redes-sociais{
+        position: relative;
+        bottom: 85%;
+    }
+    footer .redes-sociais i{
+        color: grey;
+    }
+}    
+    /* Responsividade para PC e maior */
+@media (min-width: 1000px){
+
+    .sidebar{
+        width: 35%;
+    }
+    .sidebar .menu-link {
+        font-size: 2rem;
+    }
+    .sidebar .redes-sociais{
+        position: relative;
+        font-size: 3rem;
+        bottom: 25%;
+    }
+    .hamburguer{
+        right: 10rem;
+    }
+    .hamburguer.show_menu{
+        right: 70%;
+    }
+    header .info{
+        right: 5rem;
+    }
+    header .info h1{
+        font-size: 4rem;
+    }
+    header .info h3{
+        font-size: 2.5rem;
+    }
+    .img-wrapper{
+        width: 100%;
+        height: 100vh;
+    }
+    .about{
+        width: 100%;
+        height: 100vh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .about h3{
+        font-size: 3rem;
+    }
+    .about p{
+        font-size: 1.6rem;
+    }
+    .img-perfil-wrapper{
+        object-fit: cover;
+        height: 100vh;
+        
+    }
+    .about .img-perfil-wrapper img{
+        transform: scale(0.5);
+        object-fit: cover;
+        padding-bottom: 2rem;
+    }
+    .habilities #title-habilities{
+        padding: 4rem;
+    }
+    .habilities #title-habilities h3{
+        font-size: 2.5rem;
+    }
+    .myhabilities .logo{
+        font-size: 5rem;
+    }
+    .myhabilities h3{
+        font-size: 2.5rem;
+    }
+    .myhabilities p{
+        font-size: 1.6rem;
+    }
+    .portfolio .title{
+        padding: 2rem;
+    }
+    .portfolio .title h3{
+        font-size: 2rem;
+    }
+    .portfolio h4{
+        font-size: 2rem;
+    }
+    .portfolio .myproject p{
+        font-size: 1.6rem;
+    }
+    .contact{
+        padding: 1.4rem;
+    }
+    .contact .title h3{
+        font-size: 2rem;
+    }
+    .contact .whatsapp{
+        font-size: 3rem;
+    }
+    .contact .email{
+        font-size: 3rem;
+    }
+    footer{
+        height: 12rem;
+        bottom: 0;
+    }
+    footer p{
+        font-size: 1.6rem;
+    }
+    footer .redes-sociais{
+        position: relative;
+        bottom: 80%;
+    }
+    footer .redes-sociais i{
+        color: grey;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
