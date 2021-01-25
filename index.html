@@ -3,70 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Simulado</title>
-    <link rel="stylesheet" href="index.css">
+    <meta name="author" content="Patrick Rodrigues">
+    <meta name="copyright" content= "© 2021 Patrick Rodrigues">
+    <meta name="description" content="Portfolio para desenvolvimento web e frontend">
+    <meta name="keywords" content="web, development, html5, ccs3, javascript">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <header class="menu-principal">
+    
+    <div class="hamburguer">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+    </div>
 
-            <div class="logo">
-            <h2>Desenvolvedor Web & Front-End</h2>
-            <h2 id="nome">Patrick Rodrigues</h2>
+    <div class="container">
+        
+            <div class="sidebar">
+                <nav class="navegation">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link">Início</a></li>
+                        <li class="menu-item"><a href="#sobre" class="menu-link">Sobre</a></li>
+                        <li class="menu-item"><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                        <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/eipatrickrodrigues/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/eipprs"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/eipatrickrodrigues"><i class="fab fa-github"></i></a>  
+                </div>
+            </div>
+        
+
+        <header class="header" id="home">
+            <h1>Patrick Rodrigues</h1>
+            <h3>Desenvolverdor Web & Front-End</h3>
+        </header>
+
+        <section class="image">
+
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagens/pexels-christina-morillo-1181316.jpg" class="d-block w-100" alt="Mulher em um servidor">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/pexels-olia-danilevich-4974914.jpg" class="d-block w-100" alt="Homem trabalhando e estudando programação">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/pexels-tima-miroshnichenko-5717196.jpg" class="d-block w-100" alt="Mulher trabalhando">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagens/pexels-tima-miroshnichenko-5717577.jpg" class="d-block w-100" alt="Mulher trabalhando no seu carro de luxo">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+
+        </section>
+
+        <section class="about" id="sobre">
+            <div id="tittle-id">
+                <h3>Quem sou eu?</h3></div>
+            <div class="aboutme">
+                <p>Patrick Rodrigues, 24 anos e aprendiz de desenvolvimento web e front-end, amador de programação e com vontade de evoluir um pouco todo dia na criação de sites e aplicativos, também empolgado com o aprendizado em back-end e tudo que a tecnologia pode oferecer.</p>
+            </div>
+        </section>
+
+        <section class="habilities" id="habilidades">
+            <div id="title-habilities">
+                <h3>Minhas Habilidades</h3>
+            </div>
+            <div class="myhabilities">
+
+                <!-- HTML5 CSS3 JavaScript Python -->
+
+                <div class="habilitie-html">
+                    <div class="logo">
+                        <i class="fab fa-html5"></i>
+                        <H3>HTML5</H3>
+                    </div>
+                    <div class="description">
+                        <P>Na linguagem HTML5 estou nas fases iniciais de aprendizado, entendendo o funcionamento da semântica e como deixar um site atrativo para as ferramentas de busca. </P>
+                    </div>
+                </div>
+                <div class="habilitie-css">
+                    <div class="logo">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="description">
+                        <p>Na linguagem CSS3 também estou nas primeiras etapas de aprendizado, entendendo as dinâmicas de posicionamento, cores e configurações de responsividade.</p>
+                    </div>
+                </div>
+                <div class="habilitie-js">
+                    <div class="logo">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="description">
+                        <p>Na linguagem de programação JS estou nos primeiros passos, investindo no meu desenvolvimento e criando modelos para implementação em meu portfólio, site e em meu perfil no GitHub, a rede social dos programadores.</p>
+                    </div>
+                </div>
+                <div class="habilitie-python">
+                    <div class="logo">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="description">
+                        <p>A linguagem responsável pela minha inicialização na programação, também começando com pequenos passos e futuramente com melhores habilidades me proporcionando maiores resultados no back-end.</p>
+                    </div>
+                </div>
+                <div class="habilitie-plus">
+                    <div class="logo">
+                        <i class="fas fa-plus"></i>
+                        <h3>Mais</h3>
+                    </div>
+                    <div class="description">
+                        <p>Como pretendo me aventurar tanto no front-end quanto no back-end, são necessárias mais ferramentas, contudo o foco inicial é no front-end. Um leque de habilidades me espera com os servidores, MySQL, API's, segurança, entre outras.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="portfolio" id="projetos">
+
+            <div class="title">
+            <h3>Meus Projetos</h3>
             </div>
 
+            <div class="project1-snakegame">
+                <div class="myproject">
+                    <h4>Projeto em andamento: "Jogo da cobrinha"</h4>
+                    <img src="imagens/snakegame.png" alt="Snake Game">
+                    <p>O clássico jogo da cobrinha é um bom começo para o entendimento da programação em JavaScript, recebi boas orientações.</p>
+                </div>
+            </div>
+
+            <div class="project2-virtualassistant">
+
+                <div class="title">
+                    <h4>Assistente Virtual</h4>
+                </div>
+                <img src="imagens/virtualassistant.png" alt="Virtual Assistant">
+                <p>Uma programação mais avançada, resolvi iniciar um aprendizado em uma assistente virtual apenas por curiosidade e um upgrade no ego, admito. Contudo, acompanho vídeo aulas que aos poucos compreendo e vou retendo as informações.</p>
+            </div>
+                
+        </section>
+
+        <section class="contact" id="contato">
+
+            <div class="title">
+                <h3>Fale comigo</h3>
+            </div>
+            <div class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://web.whatsapp.com/send?phone=5531984161724">(31) 98416-1724</a>
+            </div>
+            <div class="email">
+                <i class="fas fa-at"></i>
+                <a href="mailto:paulo.patrick17@hotmail.com">Mande-me um e-mail.</a>
+            </div>
+            
+        </section>
+
+        <footer class="content-footer">
+            <p>Copyright &copy; 2020, Patrick Rodrigues - Todos os direitos reservados</p>
             <div class="redes-sociais">
                 <a href="https://www.instagram.com/eipatrickrodrigues/"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/eipprs"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/eipatrickrodrigues"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/eipatrickrodrigues"><i class="fab fa-github"></i></a>                
             </div>
-        </header>
+        </footer>
 
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-        </div>
-
-        <div class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Início</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Sobre mim</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <section  class="sessao_imagens">
-            <picture class="img-wrapper">
-                <div><img src="parque1.jpg" id="img1" alt="Parque ecológico."></div>
-                <div><img src="parque2.jpg" id="img2" alt="Parque ecológico."></div>
-                <div><img src="parque3.jpg" id="img3" alt="Parque ecológico."></div>
-                <div><img src="parque4.jpg" id="img4" alt="Parque ecológico."></div>
-                <div><img src="parque5.jpg" id="img5" alt="Parque ecológico."></div>
-                <div><img src="parque6.jpg" id="img6" alt="Parque ecológico."></div>
-                <div><img src="parque7.jpg" id="img7" alt="Parque ecológico."></div>
-                <div><img src="parque8.jpg" id="img8" alt="Parque ecológico."></div>
-            </picture>
-        </section>     
-        
-        <section class="sobre">
-            <div class="img">
-                <img src="IMG_20190907_223527.jpg" alt="Patrick Rodrigues">
-            </div>
-            <div class="perfil">
-            <h2>Quem sou eu?</h2><br>
-            <p><b>Patick Rodrigues</b>, aprendiz de programação e desenvolvimento web, comecei a me apegar com a área depois de me formar em engenharia civil, curso que já vinha com decepções desde o 8° período, depois comecei a aprender sobre animação e modelagens 3D e, por fim, acabei retornando à programação, curiosamente tive uma disciplina de algoritmo no 1° período da faculdade (usei a linguagem Scilab para aplicações matemáticas), cheguei a tentar mudar de curso para Sistemas de Informação, negado por incompatibilidade com os cursos afins que a bolsa ProUni aceitava. Na programação me interessei pelo <b>desenvolvimento web e Front-End</b>, também tive carinho pelo Back-End e programação de games, vou me aprofundando e me apaixonando mais, assim como aconteceu também com o mercado de capitais.</p>
-            </div>
-            
-            
-        </section>
-        
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
     </div>
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

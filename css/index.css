@@ -1,0 +1,124 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Martel:wght@300&display=swap');
+
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Martel', serif; */
+
+/* Página Inteira */
+
+* {
+
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+
+    color: rgb(39, 39, 39);
+    font-family: 'Martel', serif;
+}
+
+.hamburguer{
+
+    height: 30px;
+    width: 35px;
+    position: fixed;
+    z-index: 160;
+    right: 7%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: all 2s;
+
+}
+
+.hamburguer.show_menu{
+
+    right: 35%;
+    transition: all 2s;
+}
+
+.hamburguer.show_menu #line1{
+
+    transform: rotate(-45deg) translateY(0.8rem);
+    background-color: #000000;
+    transition: all 2s;
+}
+.hamburguer.show_menu #line3{
+
+    transform: rotate(45deg) translateY(-0.8rem);
+    background-color: #000000;
+    transition: all 2s;
+}
+
+.hamburguer.show_menu #line2{
+
+    opacity: 0;
+}
+
+.line{
+
+    width: 100%;
+    height: 12%;
+    background-color: #ffffff;
+    box-shadow: 0.1rem 0.1rem 1px #000000;
+
+}
+
+.sidebar{
+
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(223, 223, 223);
+    top: -100%;
+    z-index: 150;
+    transition: all 2s;
+}
+
+.sidebar .menu{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.sidebar .menu .menu-item{
+
+    text-decoration: none;
+    padding-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.sidebar .menu .menu-item a{
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.sidebar.show_menu{
+
+    top: 0%;
+
+}
+
+.redes-sociais{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    width: 80%;
+
+}
+
+.redes-sociais i {
+    color: #000000;
+}
